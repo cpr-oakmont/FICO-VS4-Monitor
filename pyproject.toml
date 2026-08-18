@@ -1,0 +1,20 @@
+[project]
+name = "fico-vs4-monitor"
+version = "0.1.0"
+description = "Track VantageScore 4.0 adoption in GSE loan-level disclosure data"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "requests>=2.32",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "xlsxwriter>=3.2",
+    "matplotlib>=3.9",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.2",
+    "pytest>=8.0",
+]

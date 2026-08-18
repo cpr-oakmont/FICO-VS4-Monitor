@@ -1,0 +1,66 @@
+# fico-vs4-monitor settings
+#
+# NO CREDENTIALS IN THIS FILE. If a source needs authentication, set
+# auth: env below and put the values in .env (gitignored) under the names
+# given in auth_env. See .env.example.
+
+sources:
+  freddie:
+    # ILLD file URL templates. Placeholders expanded by src/download.py:
+    #   {yyyymm}  -> e.g. 202607
+    #   {yyyy}    -> e.g. 2026
+    #   {mm}      -> e.g. 07
+    # TODO: fill in with the exact ILLD URLs (analyst to provide).
+    # Example shape:
+    #   - https://example.freddiemac.com/illd/monthly/illd_{yyyymm}.zip
+    urls: []
+    # none = public download; env = HTTP basic auth with credentials from .env
+    auth: none
+    auth_env:
+      username: FREDDIE_USERNAME
+      password: FREDDIE_PASSWORD
+    raw_dir: data/raw/freddie
+    # File layout for src/parse_freddie.py. Left null until the exact ILLD
+    # layout is confirmed — parsers refuse to run on a null layout rather
+    # than guess field positions. See CLAUDE.md ("Adding a file layout").
+    layout: null
+
+  fannie:
+    urls: []
+    auth: none
+    auth_env:
+      username: FANNIE_USERNAME
+      password: FANNIE_PASSWORD
+    raw_dir: data/raw/fannie
+    layout: null
+
+# First origination/activity month to fetch and track (YYYY-MM).
+# VS4 deliveries began after FHFA approval; adjust once real data confirms
+# the first month with nonzero VS4 volume.
+start_month: "2025-07"
+
+paths:
+  processed_dir: data/processed
+  history_file: history/adoption_log.csv
+  output_xlsx: output/adoption_monitor.xlsx
+  exhibits_dir: output/exhibits
+
+# Lenders broken out individually in exhibits, in fixed chart order.
+# Everything else aggregates into "Other". Order also fixes chart colors —
+# a lender keeps its color even when others are filtered out.
+focus_lenders:
+  - UWM
+  - Rocket
+  - PennyMac
+  - AmeriSave
+
+# Categorical chart palette (validated colorblind-safe order; do not re-sort).
+palette:
+  - "#2a78d6"  # slot 1 blue
+  - "#eb6834"  # slot 2 orange
+  - "#1baf7a"  # slot 3 aqua
+  - "#eda100"  # slot 4 yellow
+  - "#e87ba4"  # slot 5 magenta
+  - "#008300"  # slot 6 green
+  - "#4a3aa7"  # slot 7 violet
+  - "#e34948"  # slot 8 red

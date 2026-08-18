@@ -1,0 +1,50 @@
+# Seller-name normalization map.
+#
+# GSE disclosure files carry seller names with inconsistent legal-entity
+# spellings ("UNITED WHOLESALE MORTGAGE, LLC" vs "UWM"). Keys below are the
+# normalized lender names used everywhere downstream; values are
+# case-insensitive substrings matched against the raw seller_name field.
+# First match wins, in file order — put more specific patterns first.
+# Unmatched sellers pass through as title-cased raw names and roll into
+# "Other" in exhibits.
+#
+# NOTE: seeded from common GSE seller names — verify each pattern against the
+# actual seller-name values in the first parsed month before trusting splits.
+
+UWM:
+  - UNITED WHOLESALE MORTGAGE
+  - UWM
+
+Rocket:
+  - ROCKET MORTGAGE
+  - QUICKEN LOANS
+
+AmeriSave:
+  - AMERISAVE
+
+PennyMac:
+  - PENNYMAC
+
+Freedom Mortgage:
+  - FREEDOM MORTGAGE
+
+loanDepot:
+  - LOANDEPOT
+
+CrossCountry:
+  - CROSSCOUNTRY MORTGAGE
+
+Guild:
+  - GUILD MORTGAGE
+
+Mr. Cooper:
+  - NATIONSTAR
+  - MR. COOPER
+  - MR COOPER
+
+DHI Mortgage:
+  - DHI MORTGAGE
+
+Lennar Mortgage:
+  - LENNAR MORTGAGE
+  - EAGLE HOME MORTGAGE
