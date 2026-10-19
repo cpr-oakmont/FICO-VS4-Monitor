@@ -46,9 +46,15 @@ def capture(page, url: str, out_dir: pathlib.Path, tag: str) -> int:
         captured.append({"url": resp.url, "status": resp.status, "body": body})
 
     page.on("response", on_response)
-    page.goto(url, wait_until="networkidle", timeout=90_000)
-    page.wait_for_timeout(3_000)
+    # A live-price page may poll or hold a socket open forever, so never wait
+    # for "networkidle": load the DOM, then give the data requests time to land.
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+    except Exception as e:
+        print(f"WARN goto {url}: {e}", file=sys.stderr)
+    page.wait_for_timeout(15_000)
     page.remove_listener("response", on_response)
+    page.screenshot(path=str(out_dir / f"{tag}.png"), full_page=True)
 
     # Embedded JSON (Next.js / hydration payloads).
     embedded = page.evaluate(
@@ -72,6 +78,10 @@ def capture(page, url: str, out_dir: pathlib.Path, tag: str) -> int:
         json.dumps({"page_url": url, "responses": captured, "tables": tables}, indent=1, default=str)
     )
     (out_dir / f"{tag}.txt").write_text(page.inner_text("body"))
+    (out_dir / f"{tag}.html").write_text(page.content())
+    print(f"{tag}: title={page.title()!r} json={len(captured)} tables={len(tables)}")
+    for c in captured:
+        print(f"  {c['status']} {c['url'][:160]}")
     return len(captured)
 
 
@@ -93,7 +103,10 @@ def main() -> int:
             "Chrome/124.0 Safari/537.36"
         ))
         # Default view (current prices across all GPUs/regions).
-        total += capture(page, BASE_URL, out_dir, "default")
+        try:
+            total += capture(page, BASE_URL, out_dir, "default")
+        except Exception as e:
+            print(f"WARN default: {e}", file=sys.stderr)
         # One view per GPU so the 7-day history for each is captured too.
         for gpu in args.gpus:
             url = f"{BASE_URL}?historyGpus={gpu}&historyRange={args.range}&period={args.range}"
