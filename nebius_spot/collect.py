@@ -22,6 +22,7 @@ import pathlib
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -50,6 +51,11 @@ def get(url: str, params=None, retries: int = 4) -> dict:
             req = urllib.request.Request(url, headers=HEADERS)
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.load(resp)
+        except urllib.error.HTTPError as e:
+            if e.code < 500 or attempt == retries - 1:
+                raise
+            print(f"WARN {e}; retrying", file=sys.stderr)
+            time.sleep(2 ** (attempt + 1))
         except Exception as e:
             if attempt == retries - 1:
                 raise
@@ -77,8 +83,26 @@ def fetch(lookback_days: int) -> dict:
             break
     snapshot_time = page.get("snapshotTime")
 
-    start = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=lookback_days)).replace(minute=0, second=0, microsecond=0)
     sku_ids = sorted({i["skuId"] for i in current})
+    # The API rejects windows longer than it retains (90 days -> HTTP 400), so
+    # step down to the page's own 7-day window, then shorter ones, as needed.
+    for days in sorted({lookback_days, 7, 3, 1}, reverse=True):
+        if days > lookback_days:
+            continue
+        try:
+            return {"snapshotTime": snapshot_time, "current": current,
+                    "series": fetch_series(sku_ids, days), "_lookback_days": days}
+        except urllib.error.HTTPError as e:
+            if e.code != 400:
+                raise
+            print(f"WARN {days}-day history rejected ({e}); trying shorter", file=sys.stderr)
+    raise RuntimeError("API rejected every history window")
+
+
+def fetch_series(sku_ids, days):
+    # Round up to the next hour so a window of exactly N days never exceeds N.
+    start = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=days)
+    start = start.replace(minute=0, second=0, microsecond=0) + dt.timedelta(hours=1)
     series = []
     for k in range(0, len(sku_ids), 10):
         resp = get(f"{API}/list-series", {
@@ -88,7 +112,7 @@ def fetch(lookback_days: int) -> dict:
             "filters.skuIds": sku_ids[k:k + 10],
         })
         series += resp.get("items", [])
-    return {"snapshotTime": snapshot_time, "current": current, "series": series}
+    return series
 
 
 def read_csv(path, key):
@@ -139,8 +163,8 @@ def merge(captures):
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--lookback-days", type=int, default=8,
-                    help="history to request each run (page shows 7; >7 keeps a 1-day overlap)")
+    ap.add_argument("--lookback-days", type=int, default=7,
+                    help="history to request each run; falls back to shorter windows if rejected")
     ap.add_argument("--rebuild", action="store_true", help="rebuild the CSVs from every raw capture, no fetch")
     args = ap.parse_args()
     DATA.mkdir(parents=True, exist_ok=True)
@@ -160,11 +184,11 @@ def main() -> int:
     now = dt.datetime.now(dt.timezone.utc)
     cap = fetch(args.lookback_days)
     cap["_captured_at"] = now.isoformat(timespec="seconds")
-    cap["_lookback_days"] = args.lookback_days
     (RAW_DIR / f"{now:%Y-%m-%dT%H%M}Z.json").write_text(json.dumps(cap, indent=1))
 
     points = sum(len(s.get("points", [])) for s in cap["series"])
     first = min((p["timestamp"] for s in cap["series"] for p in s.get("points", [])), default="n/a")
+    print(f"history window: {cap['_lookback_days']} days")
     print(f"{len(cap['current'])} markets, {len(cap['series'])} series, {points} hourly points (earliest {first})")
     if not cap["current"]:
         print("ERROR: API returned no markets", file=sys.stderr)
