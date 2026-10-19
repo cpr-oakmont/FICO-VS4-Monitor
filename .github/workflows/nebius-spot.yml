@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
     inputs:
       lookback_days:
-        description: "Days of hourly history to request (try more than 7 to test backfill)"
-        default: "8"
+        description: "Days of hourly history to request (falls back to shorter if the API rejects it)"
+        default: "7"
 
 permissions:
   contents: write
@@ -28,7 +28,7 @@ jobs:
           python-version: "3.12"
 
       - name: Collect spot prices
-        run: python nebius_spot/collect.py --lookback-days "${{ inputs.lookback_days || '8' }}"
+        run: python nebius_spot/collect.py --lookback-days "${{ inputs.lookback_days || '7' }}"
 
       - name: Commit data
         run: |
