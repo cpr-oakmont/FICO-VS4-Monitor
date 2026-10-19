@@ -1,0 +1,202 @@
+Skip to main content
+The Nebius AI Builder Program is expanding across Europe with compute grants, capital, and community programs.
+Kickstart your career with our Early Talent Program! Apply now!
+Nebius Rated Platinum in SemiAnalysis ClusterMAX™ 3.0
+What's new in Nebius AI Cloud: Q3 2026
+Physical AI Awards: Apply for $150K in compute
+Products
+Solutions
+Why Nebius
+Developers
+Pricing
+Company
+Investors
+Contact sales
+Log in
+Spot Preemptible VM prices
+Compare live, market-driven GPU prices and recent trends across regions to decide when and where to run.
+All GPUs
+Explore live prices per GPU platform
+
+Select a model to explore all regions with available PVM capacity.
+
+1 day
+7 days
+B300
+uk-south1
+$5.50
+$0.00 (0.0%)
+vs 7 days ago
+13 Oct, 00:00
+19 Oct, 23:00 UTC
+B200
+us-central1
+$3.65
++$2.35 (+180.8%)
+vs 7 days ago
+13 Oct, 00:00
+19 Oct, 23:00 UTC
+H200
+us-central1
+$0.79
+−$3.70 (−82.4%)
+vs 7 days ago
+13 Oct, 00:00
+19 Oct, 23:00 UTC
+H100
+eu-north1
+$0.79
+RTX PRO 6000
+us-central1
+$0.79
+Price history
+
+Compare up to two GPU platforms across regions. USD per GPU-hour.
+
+1 day
+7 days
+Updated 19 Oct 2026, 22:51 UTC
+B300
+All regions
+B300
+$0.00
+$5.00
+$10.00
+13 Oct
+14 Oct
+15 Oct
+16 Oct
+17 Oct
+18 Oct
+19 Oct
+eu-west2
+uk-south1
+us-north1
+
+Select a region to highlight it. Use × to hide it.
+
+All live prices
+
+12 markets
+
+GPU platform
+	
+Region
+	
+USD / GPU-hour
+	
+Effective since, UTC
+
+NVIDIA B300	
+eu-west2	$9.49	19 Oct 2026, 11:56
+NVIDIA B300	
+uk-south1	$5.50	19 Oct 2026, 22:01
+NVIDIA B300	
+us-north1	$9.49	19 Oct 2026, 14:11
+NVIDIA B200	
+me-west1	$4.20	19 Oct 2026, 22:26
+NVIDIA B200	
+us-central1	$3.65	19 Oct 2026, 22:31
+NVIDIA H200	
+eu-north1	$1.40	19 Oct 2026, 22:31
+NVIDIA H200	
+eu-west1	$3.12	19 Oct 2026, 22:36
+NVIDIA H200	
+us-central1	$0.79	18 Oct 2026, 23:36
+NVIDIA H100	
+eu-north1	$0.79	9 Oct 2026, 17:01
+NVIDIA RTX PRO 6000	
+eu-south1	$1.38	19 Oct 2026, 21:46
+NVIDIA RTX PRO 6000	
+uk-south2	$1.38	19 Oct 2026, 22:16
+NVIDIA RTX PRO 6000	
+us-central1	$0.79	19 Oct 2026, 21:21
+Get started with Preemptible VMs
+
+Access GPU capacity at market-driven prices, with complete control over what you’re willing to pay.
+
+Get started
+Read the docs
+Read the blog
+
+Subscribe to updates
+
+First name
+Last name
+Email
+Subscription topics
+Nebius product and events
+Nebius Group news
+I agree to receive marketing communications from Nebius, subject to the Privacy Policy.
+(opens in a new tab)
+Subscribe
+(opens in a new tab)
+(opens in a new tab)
+(opens in a new tab)
+(opens in a new tab)
+Products
+Managed Inference
+Agentic Search
+Human Validation
+AI Orchestration
+Serverless AI
+DataOps
+ModelOps
+Compute
+Networking
+AI Storage
+Service status
+Solutions
+Scientific AI and Healthcare
+Media & Entertainment
+Retail & Commerce
+Physical AI & Robotics
+Agents & Copilots
+Vision AI
+Pre-Training
+Post-Training
+Inference
+Simulation
+Pricing
+AI Cloud pricing
+Token Factory pricing
+Programs
+Partner program
+Startup program
+Research grants
+Nebius Fellows
+Resources
+Blog
+Events & webinars
+Customer stories
+Feature requests
+Nebius for AI Builders
+Tech docs
+Nebius AI Cloud
+Nebius Token Factory
+Legal
+Legal documents
+Report abuse
+DMCA notice
+Security and compliance
+Trust center
+Company
+About
+Investor Hub
+Sustainability
+Nebius Academy
+Newsroom
+Careers
+Contacts
+Corporate policies
+Terms of use
+Manage cookies
+Cookie policy
+(opens in a new tab)
+Privacy policy
+(opens in a new tab)
+© 2026 Nebius B.V.
+
+We process your personal information to measure and improve our sites and service, to assist our marketing campaigns and to provide personalised content and advertising. By clicking the button on the right, you can exercise your privacy rights. For more information see our Cookie policy
+Your privacy rights
+Accept cookies
