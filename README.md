@@ -1,11 +1,21 @@
 # FICO-VS4-Monitor
 ## Nebius GPU spot price tracker
 
-Nebius's [spot price page](https://nebius.com/spot-prices) only shows 7 days of history. A daily GitHub Action (`.github/workflows/nebius-spot.yml`, 13:17 UTC, can also be started from the Actions tab) captures it and builds a longer history.
+Nebius's [spot price page](https://nebius.com/spot-prices) only shows 7 days of history. A daily GitHub Action (`.github/workflows/nebius-spot.yml`, 13:17 UTC, can also be started from the Actions tab) builds a longer record.
 
-- `nebius_spot/scrape.py` loads the page in headless Chromium, the default view plus one view per GPU, and saves every JSON payload, embedded hydration data and rendered table to `data/nebius_spot/raw/<date>/`.
-- `nebius_spot/parse.py` pulls price records (GPU, region, timestamp, metric, price) out of the raw files and writes them to `data/nebius_spot/spot_prices.csv`. History points are de-duplicated on their own timestamp, so overlapping 7-day windows merge into one series. Point-in-time quotes are kept once per capture date.
+The page reads from a public, unauthenticated API, and `nebius_spot/collect.py` calls it directly with no browser:
 
-The raw captures are the source of record. If Nebius renames fields, change the `KEY_*` patterns in `parse.py` and re-run it to rebuild the CSV from all past captures.
+- `GET api.nebius.cloud/billing/v1alpha1/spot-price` returns the current price for every GPU × region market.
+- `GET .../spot-price/list-series` returns hourly price history (last price in each hour) per market.
 
-Run locally: `pip install -r nebius_spot/requirements.txt && python -m playwright install chromium && python nebius_spot/scrape.py && python nebius_spot/parse.py`
+Output in `data/nebius_spot/`:
+
+| File | Grain | Columns |
+|---|---|---|
+| `spot_hourly.csv` | one row per market-hour | timestamp, gpu, region, price_usd, platform, sku_id, captured_at |
+| `spot_snapshots.csv` | one row per market per run | captured_at, gpu, region, price_usd, effective_time, platform, sku_id |
+| `raw/<timestamp>.json` | one file per run | raw API responses, the source of record |
+
+Each run requests 8 days of history, so successive runs overlap and the hourly series stays continuous. Rows are de-duplicated on (sku_id, timestamp). `python nebius_spot/collect.py --rebuild` regenerates both CSVs from `raw/`.
+
+Run locally (standard library only): `python nebius_spot/collect.py`
