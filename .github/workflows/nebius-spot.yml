@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "17 13 * * *"   # daily, 13:17 UTC (~9am ET)
   workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Days of hourly history to request (try more than 7 to test backfill)"
+        default: "8"
 
 permissions:
   contents: write
@@ -15,28 +19,18 @@ concurrency:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      - name: Install Playwright
-        run: |
-          pip install -r nebius_spot/requirements.txt
-          python -m playwright install --with-deps chromium
-
-      - name: Capture page
-        run: python nebius_spot/scrape.py
-
-      - name: Parse to CSV
-        if: always()
-        run: python nebius_spot/parse.py
+      - name: Collect spot prices
+        run: python nebius_spot/collect.py --lookback-days "${{ inputs.lookback_days || '8' }}"
 
       - name: Commit data
-        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
