@@ -2,7 +2,10 @@ name: Nebius spot price snapshot
 
 on:
   schedule:
-    - cron: "17 13 * * *"   # daily, 13:17 UTC (~9am ET)
+    # Twice daily: GitHub can delay or skip scheduled runs by hours, and the
+    # second run covers a missed first one. Duplicate captures de-dupe.
+    - cron: "17 13 * * *"   # 13:17 UTC (~9am ET)
+    - cron: "17 1 * * *"    # 01:17 UTC (~9pm ET)
   workflow_dispatch:
     inputs:
       lookback_days:
