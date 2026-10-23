@@ -1,7 +1,7 @@
 # FICO-VS4-Monitor
 ## Nebius GPU spot price tracker
 
-Nebius's [spot price page](https://nebius.com/spot-prices) only shows 7 days of history. A daily GitHub Action (`.github/workflows/nebius-spot.yml`, 13:17 UTC, can also be started from the Actions tab) builds a longer record.
+Nebius's [spot price page](https://nebius.com/spot-prices) only shows 7 days of history. A GitHub Action (`.github/workflows/nebius-spot.yml`) runs twice a day, at 13:17 and 01:17 UTC, and can also be started from the Actions tab. It builds a longer record.
 
 The page reads from a public, unauthenticated API, and `nebius_spot/collect.py` calls it directly with no browser:
 
