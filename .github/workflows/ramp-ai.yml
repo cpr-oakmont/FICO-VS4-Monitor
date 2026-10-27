@@ -7,9 +7,6 @@ on:
     - cron: "23 14 * * 2"   # Tue 14:23 UTC
     - cron: "23 14 * * 6"   # Sat 14:23 UTC
   workflow_dispatch:
-  push:
-    branches: [claude/vibrant-goodall-vw7rxz]
-    paths: [ramp_ai/**, .github/workflows/ramp-ai.yml]
 
 permissions:
   contents: write
