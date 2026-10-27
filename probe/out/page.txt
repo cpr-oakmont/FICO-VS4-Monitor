@@ -1,0 +1,238 @@
+Casual
+Serious
+Products
+Solutions
+Partners
+Resources
+Pricing
+Sign in
+See a demo
+Get started
+RAMP ECONOMICS LAB
+Ramp AI Index
+
+Monthly measurement of AI adoption and spend across American businesses using transaction data from 85,000+ firms on Ramp.
+
+DATA THROUGH SEP 2026
+
+Summary
+
+In the week ending October 23, 2026, Anthropic captured the largest share of AI token spending among businesses on Ramp, at 60.5%.
+
+Total token spending rose 8.9% compared with the same week last month.
+
+In September 2026, AI adoption reached 55.9% of U.S. businesses on Ramp, up 0.6 percentage points from August and 12.1 points from a year earlier.
+
+Among firms paying for AI, the top 1% spent a median of $9,567.53 per employee per month on AI, compared with $15.70 for the median firm.
+
+ECONOMIC INDICATORS
+Adoption
+Overall
+Overall + Models
+Sector
+Business size
+Geographies
+AI spend per employee
+AI share of business spend
+TOKENOMICS
+Token volume
+Token spend
+Token prices
+Ramp AI Index
+
+Share of businesses with spending on AI models, subscriptions, tokens, and APIs
+
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+Jan '24
+Jan '25
+Jan '26
+Ramp Overall 55.9%
+Census Estimate 23.8%
+
+Source: Ramp AI Index, business spend data from Ramp includes corporate card and invoice / ACH payments. Census estimate from Census Business Trends and Outlook Survey. Get the data.
+
+Historical data
+Latest data
+Economic indicators
+
+AI adoption is the share of businesses with spending on AI models, subscriptions, tokens, and APIs. Spend per employee covers only firms paying for AI; for the top 10% and top 1% of those firms, it is the median within each group.
+
+Metric	Sep 2026	Aug 2026	Change
+AI adoption: All businesses	55.9%	55.2%	+0.6 pts
+AI adoption: Anthropic	43.8%	43.5%	+0.2 pts
+AI adoption: OpenAI	40.6%	39.5%	+1.1 pts
+AI adoption: xAI	4.1%	3.5%	+0.6 pts
+AI adoption: DeepSeek	0.3%	0.2%	+0.1 pts
+AI adoption: Mistral AI	0.2%	0.2%	0.0 pts
+AI adoption: Information sector	79.9%	80.0%	-0.1 pts
+AI adoption: Finance & Insurance sector	73.7%	73.1%	+0.6 pts
+AI adoption: Manufacturing sector	60.9%	60.3%	+0.6 pts
+AI adoption: Retail Trade sector	49.9%	48.3%	+1.6 pts
+AI adoption: Construction sector	43.2%	41.2%	+1.9 pts
+AI adoption: Healthcare sector	42.5%	42.3%	+0.2 pts
+AI adoption: Accommodation & Food sector	33.0%	32.6%	+0.4 pts
+AI adoption: Large businesses	65.7%	65.2%	+0.5 pts
+AI adoption: Medium-sized businesses	62.5%	61.4%	+1.1 pts
+AI adoption: Small businesses	50.0%	49.5%	+0.5 pts
+AI spend per employee per month: Median firm paying for AI	$15.70	$14.74	+$0.96
+AI spend per employee per month: Top 10% of firms paying for AI	$813.43	$740.47	+$72.96
+AI spend per employee per month: Top 1% of firms paying for AI	$9,567.53	$8,568.17	+$999.36
+AI share of business spend (excluding payroll)	5.77%	5.96%	-0.19 pts
+Tokenomics
+
+The latest complete week compared with the same week last month, from Ramp AI Token Spend Management. Total token spending rose 8.9%. Total token volume rose 37.1%.
+
+Metric	Week ending Oct 23, 2026	Week ending Sep 25, 2026	Change
+Share of token spend: Anthropic	60.5%	51.3%	+9.2 pts
+Share of token spend: OpenAI	35.1%	44.2%	-9.0 pts
+Share of token spend: xAI	2.2%	2.5%	-0.3 pts
+Share of token spend: Google	1.9%	1.6%	+0.3 pts
+Share of token spend: Cursor	0.1%	0.2%	-0.1 pts
+Share of token volume: Anthropic	59.8%	56.1%	+3.7 pts
+Share of token volume: OpenAI	37.2%	40.2%	-3.1 pts
+Share of token volume: xAI	1.5%	1.6%	-0.2 pts
+Share of token volume: Google	1.3%	1.5%	-0.2 pts
+Share of token volume: DeepSeek	0.2%	0.1%	+0.1 pts
+Blended price per million tokens: OpenAI & Anthropic	$0.59	$0.77	-24.1%
+Blended price per million tokens: OpenAI	$0.44	$0.67	-34.7%
+Blended price per million tokens: Anthropic	$0.73	$0.89	-17.9%
+Ara Kharazian
+Lead Economist, Ramp
+Share
+Don't miss key shifts in business spend from Ramp Economics Lab.
+Subscribe on Substack
+Methodology
+
+Ramp AI Index measures the adoption rate of artificial intelligence products and services among American businesses. Our sample includes more than 85,000 American businesses and billions of dollars in corporate spend using data from Ramp’s corporate card and bill pay platform.
+
+Our work builds on previous work by Bonney et al. (2024) by providing a new dataset to measure firm adoption and spend on artificial intelligence. Previous work has relied almost entirely on surveys that ask businesses if they use AI, but surveys may lead to underreporting of actual AI adoption and spend, particularly when questions are unclear or when adoption of a new technology is rising very quickly. Using contract and transaction data from corporate spend with AI companies, we produced a more timely and accurate measurement of AI adoption by U.S. businesses.
+
+Our transaction set is built using company models that extract line-item text from paid receipts and bills uploaded by the purchaser following a sale. Firms are considered to have adopted AI tools if they have a positive transaction amount for an AI product or service in a given month. AI products and services are identified using merchant name and line item details from receipts and bills.
+
+Firms are assigned to industry sectors using internal company models that predict the relevant industry sector using the NAICS standard. Firms are assigned to business size segments using company models that use internal and third-party data on firm revenues and employee counts.
+
+It’s likely our results underestimate actual AI adoption and spend due to the prevalence of businesses using free AI tools, in which no paid transaction occurs, or when employees use personal accounts with AI companies to complete work tasks.
+
+Sources and Definitions
+
+Adoption: The share of businesses with an observed payment for an AI product or service in a given month. The measure uses corporate card, invoice, and ACH transactions processed by Ramp; merchant names and line-item details identify qualifying payments.
+
+Spend per Employee: Monthly observed AI spending divided by employee count for businesses in the reported cohort. The measure combines AI-related corporate card, invoice, and ACH transactions processed by Ramp with matched company employee counts.
+
+Token volumes, spend, and prices: These metrics track token volumes, spend, and prices against AI models among businesses using Ramp’s Token Spend Management product. The product imports usage and billing data from connected AI providers and records costs using provider and model identifiers. It represents a sample of Ramp businesses that spend on AI tokens and use the TSM product. It is not representative of Ramp’s total AI spend volume, though results are directionally similar.
+
+Ara Kharazian
+•
+Lead Economist, Ramp
+Ara Kharazian is the lead economist at Ramp and writes the weekly newsletter Econ Lab on Substack. His writing and analysis of AI, business spend, and the economy has been covered in the New York Times, Wall Street Journal, Financial Times, NBC News, ABC News, NPR's Planet Money, Bloomberg, the Guardian and more. Ara previously led economic research at Square and was an economic consultant at Cornerstone Research.
+You might also like
+How much does it cost to be AI-pilled?
+Ramp economist Ara Kharazian publishes the latest Ramp data on AI adoption, a rebound for OpenAI vs. Anthropic, and the cost of being AI-pilled.
+Companies hire more after AI adoption
+Using Ramp spending data linked to Revelio Labs workforce records, economists at Ramp and Revelio find that firms that adopt AI grow employment by 10%, including entry-level hiring.
+The Census Bureau was undercounting business AI adoption
+U.S. Census updated the question on AI adoption and the adoption rate doubled to 20%. But it's still far behind Ramp’s estimate showing 46.6% of businesses use AI.
+AI business adoption re-accelerates, led by Anthropic
+Anthropic grew adoption 2.1 percentage points to 14.3% in October, its second-largest monthly increase, while OpenAI adoption increased by 0.3 percentage points.
+Are we in an AI bubble?
+If you were an investor, here’s the Ramp data that would help you understand if the AI wave for businesses is overhyped.
+How we built The Ramp AI Index
+Our dataset is built by extracting text from billions of aggregated, anonymized transactions from over 30,000 businesses using Ramp Bill Pay and corporate cards
+Time is money. Save both.
+Email
+Get started for free
+About us
+Careers
+Emerging talent
+Customers
+Help center
+Product releases
+Ramp for Agents
+Ramp Labs
+API documentation
+Versus
+Products
+Corporate cards
+Expense management
+Spend management
+Budgets
+Banking
+Travel
+Reimbursements
+Procurement
+Accounts payable
+Vendor management
+Approvals
+Security
+Trust
+Mobile app
+Ramp Sheets
+Platform
+Platform overview
+Accounting automation
+Intelligence
+Reporting
+Savings
+Integrations
+Multi-entity
+Global
+AI Spend Management
+Router
+Partners
+Accounting firms
+Private equity
+Venture capital
+System integrators
+Technology partners
+Spend and payroll partners
+Reseller partners
+Franchise partners
+Solutions
+Startups
+Small business
+Mid market
+Enterprise
+Free tools and resources
+Perks and rewards
+Find an accountant
+Find a services partner
+Savings calculator
+Mission statement generator
+Charge finder
+Per diem calculator
+Mileage reimbursement calculator
+Card comparison tool
+Investor database
+Expense categorization
+Expense policy builder
+Vendor directory
+Virtual cards
+Answers Hub
+Terms of Service
+Editorial Guidelines
+Privacy Policy
+Your Privacy Choices
+© 2026 Ramp Business Corporation. "Ramp" and the Ramp logo are registered trademarks of the company.
+Ramp Support: +1-855-206-7283
+The Ramp Visa Corporate Card is issued in the U.S. by Celtic Bank, and to U.S. corporations operating globally by Column N.A., Member FDIC, and is subject to credit approval. The Ramp Visa Commercial Card is issued by Sutton Bank, Member FDIC. The Ramp Visa Business Card is issued by Lead Bank, Member FDIC. Each card is issued pursuant to a license from Visa USA Inc.
+Ramp Visa Business Cards are issued in Canada by Peoples Trust Company, pursuant to license by Visa* International. Visa Int./Peoples Trust Company, Licensed User. Card Balance not insured by the Canada Deposit Insurance Corporation. Ramp Business Corporation is registered as a Payment Service Provider with the Bank of Canada.
+Ramp cards are issued in the UK by Stripe Payments UK Limited, an electronic money institution authorized by the Financial Conduct Authority (firm reference number: 900461). Ramp cards are issued in the EEA by Stripe Technology Europe Limited, an electronic money institution authorized by the Central Bank of Ireland (firm reference number: C187865). Cards are issued under the Visa card scheme pursuant to a license from Visa Europe Limited.
+Visa is a registered trademark of Visa International Service Association. All other trademarks and service marks belong to their respective owners.
+*Ramp Business Corporation is a financial technology company and is not a bank. Bank deposit services provided by First Internet Bank of Indiana, Member FDIC.
+†Investment account with portfolios managed by Moment Advisors, LLC. Investing involves risk, including possible loss of principal. Asset allocation does not guarantee profit or protect against loss. Past performance does not guarantee future results. Additional information can be found here. Securities products offered by Apex Clearing Corporation, member FINRA, SIPC. The Investment Account is not insured by the FDIC, not a deposit product, and may lose value.
+Ramp Payments Corporation - NMLS 2371465 Disclosures, Ramp Financing Corporation - NMLS 2431387
+Join the 85,000+ businesses simplifying their finances with Ramp.
+Email
+Get started for free
+Ramp Business Corporation
+28 West 23rd Street, Floor 2
+New York, NY 10010
+LinkedIn
+X
+Facebook
