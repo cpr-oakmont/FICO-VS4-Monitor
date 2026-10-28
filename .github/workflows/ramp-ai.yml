@@ -1,0 +1,46 @@
+name: Ramp AI Index snapshot
+
+on:
+  schedule:
+    # Twice a week: Ramp updates tokenomics weekly and adoption monthly, and
+    # GitHub can skip a scheduled run. Re-runs are idempotent.
+    - cron: "23 14 * * 2"   # Tue 14:23 UTC
+    - cron: "23 14 * * 6"   # Sat 14:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ramp-ai
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # Only used if Ramp stops serving the data to a plain HTTP request.
+      - name: Install Playwright
+        run: |
+          pip install playwright==1.47.0
+          python -m playwright install --with-deps chromium
+
+      - name: Collect Ramp AI Index
+        run: python ramp_ai/collect.py
+
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add data/ramp_ai
+          git diff --cached --quiet && exit 0
+          git commit -m "Ramp AI Index snapshot $(date -u +%F)"
+          git pull --rebase
+          git push

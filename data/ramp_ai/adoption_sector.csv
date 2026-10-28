@@ -1,0 +1,274 @@
+date_month,naics_sector,adoption_rate_pct,mom_change_pp
+2023-07-01,Accommodation & Food,7.1,0
+2023-07-01,Construction,6.85,0
+2023-07-01,Finance & Insurance,34.65,0
+2023-07-01,Healthcare,13.83,0
+2023-07-01,Information,47.29,0
+2023-07-01,Manufacturing,16.9,0
+2023-07-01,Retail Trade,14.95,0
+2023-08-01,Accommodation & Food,8.19,1.09
+2023-08-01,Construction,8.1,1.26
+2023-08-01,Finance & Insurance,36.07,1.42
+2023-08-01,Healthcare,14.16,0.32
+2023-08-01,Information,47.42,0.13
+2023-08-01,Manufacturing,17.47,0.57
+2023-08-01,Retail Trade,15.1,0.14
+2023-09-01,Accommodation & Food,9.5,1.31
+2023-09-01,Construction,8.58,0.48
+2023-09-01,Finance & Insurance,36.57,0.5
+2023-09-01,Healthcare,15.81,1.66
+2023-09-01,Information,49.58,2.17
+2023-09-01,Manufacturing,19.11,1.64
+2023-09-01,Retail Trade,16.35,1.25
+2023-10-01,Accommodation & Food,11.83,2.33
+2023-10-01,Construction,8.72,0.14
+2023-10-01,Finance & Insurance,37.39,0.83
+2023-10-01,Healthcare,15.29,-0.53
+2023-10-01,Information,51.45,1.87
+2023-10-01,Manufacturing,20.4,1.29
+2023-10-01,Retail Trade,14.59,-1.75
+2023-11-01,Accommodation & Food,11.52,-0.31
+2023-11-01,Construction,9.31,0.58
+2023-11-01,Finance & Insurance,38.53,1.13
+2023-11-01,Healthcare,15.99,0.7
+2023-11-01,Information,53.42,1.97
+2023-11-01,Manufacturing,21.41,1.01
+2023-11-01,Retail Trade,17.34,2.75
+2023-12-01,Accommodation & Food,12.94,1.42
+2023-12-01,Construction,10.02,0.72
+2023-12-01,Finance & Insurance,40.67,2.14
+2023-12-01,Healthcare,16.57,0.59
+2023-12-01,Information,54.44,1.01
+2023-12-01,Manufacturing,22.92,1.51
+2023-12-01,Retail Trade,19.81,2.46
+2024-01-01,Accommodation & Food,13.22,0.29
+2024-01-01,Construction,10.12,0.1
+2024-01-01,Finance & Insurance,42.09,1.42
+2024-01-01,Healthcare,18.16,1.59
+2024-01-01,Information,55.54,1.1
+2024-01-01,Manufacturing,24.04,1.13
+2024-01-01,Retail Trade,21.41,1.6
+2024-02-01,Accommodation & Food,14.45,1.23
+2024-02-01,Construction,11.44,1.32
+2024-02-01,Finance & Insurance,42.73,0.64
+2024-02-01,Healthcare,17.59,-0.57
+2024-02-01,Information,56.25,0.71
+2024-02-01,Manufacturing,24.15,0.11
+2024-02-01,Retail Trade,21.55,0.14
+2024-03-01,Accommodation & Food,14.69,0.23
+2024-03-01,Construction,11.52,0.07
+2024-03-01,Finance & Insurance,43.06,0.34
+2024-03-01,Healthcare,18.05,0.46
+2024-03-01,Information,57.69,1.44
+2024-03-01,Manufacturing,25.25,1.1
+2024-03-01,Retail Trade,21,-0.55
+2024-04-01,Accommodation & Food,14.64,-0.04
+2024-04-01,Construction,11.79,0.28
+2024-04-01,Finance & Insurance,42.75,-0.31
+2024-04-01,Healthcare,17.67,-0.38
+2024-04-01,Information,57.89,0.2
+2024-04-01,Manufacturing,24.55,-0.71
+2024-04-01,Retail Trade,22,1
+2024-05-01,Accommodation & Food,14.79,0.15
+2024-05-01,Construction,13.24,1.45
+2024-05-01,Finance & Insurance,43.07,0.32
+2024-05-01,Healthcare,18.07,0.4
+2024-05-01,Information,58.24,0.35
+2024-05-01,Manufacturing,24.5,-0.04
+2024-05-01,Retail Trade,22.9,0.9
+2024-06-01,Accommodation & Food,14.23,-0.56
+2024-06-01,Construction,13.8,0.56
+2024-06-01,Finance & Insurance,44,0.92
+2024-06-01,Healthcare,18.04,-0.03
+2024-06-01,Information,58.51,0.27
+2024-06-01,Manufacturing,25.32,0.82
+2024-06-01,Retail Trade,21.66,-1.23
+2024-07-01,Accommodation & Food,14.13,-0.1
+2024-07-01,Construction,13.27,-0.53
+2024-07-01,Finance & Insurance,45.48,1.49
+2024-07-01,Healthcare,17.64,-0.39
+2024-07-01,Information,59.76,1.25
+2024-07-01,Manufacturing,26.06,0.73
+2024-07-01,Retail Trade,23.32,1.66
+2024-08-01,Accommodation & Food,14.24,0.1
+2024-08-01,Construction,13.54,0.27
+2024-08-01,Finance & Insurance,46.96,1.48
+2024-08-01,Healthcare,18.82,1.18
+2024-08-01,Information,60.05,0.29
+2024-08-01,Manufacturing,26.87,0.81
+2024-08-01,Retail Trade,22.14,-1.18
+2024-09-01,Accommodation & Food,15.51,1.27
+2024-09-01,Construction,14.14,0.6
+2024-09-01,Finance & Insurance,46.68,-0.29
+2024-09-01,Healthcare,19,0.18
+2024-09-01,Information,61.05,1
+2024-09-01,Manufacturing,28.6,1.73
+2024-09-01,Retail Trade,22.64,0.5
+2024-10-01,Accommodation & Food,16.29,0.78
+2024-10-01,Construction,15.45,1.31
+2024-10-01,Finance & Insurance,47.09,0.41
+2024-10-01,Healthcare,19.38,0.38
+2024-10-01,Information,61.86,0.81
+2024-10-01,Manufacturing,29.34,0.74
+2024-10-01,Retail Trade,24.17,1.53
+2024-11-01,Accommodation & Food,17.17,0.89
+2024-11-01,Construction,15.65,0.2
+2024-11-01,Finance & Insurance,47.94,0.85
+2024-11-01,Healthcare,19.51,0.13
+2024-11-01,Information,62.77,0.92
+2024-11-01,Manufacturing,29.9,0.56
+2024-11-01,Retail Trade,25.03,0.86
+2024-12-01,Accommodation & Food,17.16,-0.01
+2024-12-01,Construction,16.4,0.76
+2024-12-01,Finance & Insurance,48.4,0.46
+2024-12-01,Healthcare,20.88,1.37
+2024-12-01,Information,62.72,-0.05
+2024-12-01,Manufacturing,30.11,0.22
+2024-12-01,Retail Trade,26.29,1.26
+2025-01-01,Accommodation & Food,17.61,0.45
+2025-01-01,Construction,18.06,1.66
+2025-01-01,Finance & Insurance,50.2,1.8
+2025-01-01,Healthcare,21.77,0.89
+2025-01-01,Information,63.68,0.96
+2025-01-01,Manufacturing,31.51,1.39
+2025-01-01,Retail Trade,26.28,-0.01
+2025-02-01,Accommodation & Food,17.74,0.13
+2025-02-01,Construction,19.27,1.21
+2025-02-01,Finance & Insurance,52.46,2.26
+2025-02-01,Healthcare,22.75,0.98
+2025-02-01,Information,64.73,1.05
+2025-02-01,Manufacturing,32.5,0.99
+2025-02-01,Retail Trade,26.23,-0.05
+2025-03-01,Accommodation & Food,18.74,0.99
+2025-03-01,Construction,20.49,1.22
+2025-03-01,Finance & Insurance,53.38,0.92
+2025-03-01,Healthcare,22.8,0.05
+2025-03-01,Information,66.54,1.81
+2025-03-01,Manufacturing,33.81,1.31
+2025-03-01,Retail Trade,26.5,0.27
+2025-04-01,Accommodation & Food,19.68,0.95
+2025-04-01,Construction,21.27,0.78
+2025-04-01,Finance & Insurance,54.99,1.61
+2025-04-01,Healthcare,23.79,1
+2025-04-01,Information,66.68,0.14
+2025-04-01,Manufacturing,36.54,2.73
+2025-04-01,Retail Trade,31.92,5.42
+2025-05-01,Accommodation & Food,19.69,0.01
+2025-05-01,Construction,23.28,2.01
+2025-05-01,Finance & Insurance,56.64,1.65
+2025-05-01,Healthcare,25.55,1.76
+2025-05-01,Information,67.71,1.03
+2025-05-01,Manufacturing,38.45,1.91
+2025-05-01,Retail Trade,31.95,0.03
+2025-06-01,Accommodation & Food,21.05,1.36
+2025-06-01,Construction,24.44,1.16
+2025-06-01,Finance & Insurance,57.31,0.67
+2025-06-01,Healthcare,26.78,1.23
+2025-06-01,Information,68.86,1.15
+2025-06-01,Manufacturing,39.78,1.33
+2025-06-01,Retail Trade,32.71,0.76
+2025-07-01,Accommodation & Food,21.79,0.73
+2025-07-01,Construction,27.26,2.82
+2025-07-01,Finance & Insurance,57.66,0.35
+2025-07-01,Healthcare,27.33,0.55
+2025-07-01,Information,70.13,1.27
+2025-07-01,Manufacturing,41.99,2.21
+2025-07-01,Retail Trade,34.59,1.88
+2025-08-01,Accommodation & Food,21.84,0.05
+2025-08-01,Construction,29.09,1.83
+2025-08-01,Finance & Insurance,58.03,0.37
+2025-08-01,Healthcare,29.56,2.24
+2025-08-01,Information,70.57,0.45
+2025-08-01,Manufacturing,43.38,1.39
+2025-08-01,Retail Trade,34.42,-0.17
+2025-09-01,Accommodation & Food,22.81,0.97
+2025-09-01,Construction,29.58,0.49
+2025-09-01,Finance & Insurance,58.14,0.1
+2025-09-01,Healthcare,30.28,0.72
+2025-09-01,Information,71.35,0.77
+2025-09-01,Manufacturing,43.48,0.1
+2025-09-01,Retail Trade,34.46,0.04
+2025-10-01,Accommodation & Food,23.43,0.62
+2025-10-01,Construction,29.3,-0.29
+2025-10-01,Finance & Insurance,58.49,0.35
+2025-10-01,Healthcare,29.63,-0.65
+2025-10-01,Information,71.43,0.08
+2025-10-01,Manufacturing,43.24,-0.24
+2025-10-01,Retail Trade,34.84,0.38
+2025-11-01,Accommodation & Food,24.22,0.8
+2025-11-01,Construction,30.32,1.02
+2025-11-01,Finance & Insurance,58.34,-0.15
+2025-11-01,Healthcare,30.97,1.34
+2025-11-01,Information,71.75,0.33
+2025-11-01,Manufacturing,45.05,1.81
+2025-11-01,Retail Trade,36.06,1.22
+2025-12-01,Accommodation & Food,24.95,0.72
+2025-12-01,Construction,30.03,-0.29
+2025-12-01,Finance & Insurance,58.1,-0.24
+2025-12-01,Healthcare,30.99,0.02
+2025-12-01,Information,71.46,-0.3
+2025-12-01,Manufacturing,45.46,0.4
+2025-12-01,Retail Trade,36.69,0.62
+2026-01-01,Accommodation & Food,25.98,1.04
+2026-01-01,Construction,31.26,1.24
+2026-01-01,Finance & Insurance,60.4,2.3
+2026-01-01,Healthcare,31.67,0.68
+2026-01-01,Information,73.08,1.62
+2026-01-01,Manufacturing,46.48,1.02
+2026-01-01,Retail Trade,38.57,1.88
+2026-02-01,Accommodation & Food,26.31,0.33
+2026-02-01,Construction,31.94,0.68
+2026-02-01,Finance & Insurance,65.3,4.9
+2026-02-01,Healthcare,33.39,1.73
+2026-02-01,Information,75.18,2.1
+2026-02-01,Manufacturing,49.29,2.81
+2026-02-01,Retail Trade,41.53,2.96
+2026-03-01,Accommodation & Food,28.79,2.48
+2026-03-01,Construction,35.08,3.14
+2026-03-01,Finance & Insurance,68.79,3.49
+2026-03-01,Healthcare,35.4,2
+2026-03-01,Information,76.67,1.49
+2026-03-01,Manufacturing,52.5,3.21
+2026-03-01,Retail Trade,44.03,2.5
+2026-04-01,Accommodation & Food,28.39,-0.4
+2026-04-01,Construction,37.1,2.02
+2026-04-01,Finance & Insurance,70.29,1.5
+2026-04-01,Healthcare,38.46,3.06
+2026-04-01,Information,78.15,1.47
+2026-04-01,Manufacturing,55.3,2.8
+2026-04-01,Retail Trade,46.24,2.21
+2026-05-01,Accommodation & Food,30.15,1.76
+2026-05-01,Construction,38.64,1.54
+2026-05-01,Finance & Insurance,72.08,1.79
+2026-05-01,Healthcare,40.16,1.7
+2026-05-01,Information,78.07,-0.08
+2026-05-01,Manufacturing,57.2,1.91
+2026-05-01,Retail Trade,46.53,0.29
+2026-06-01,Accommodation & Food,30.19,0.04
+2026-06-01,Construction,39.94,1.3
+2026-06-01,Finance & Insurance,72.53,0.45
+2026-06-01,Healthcare,40.7,0.53
+2026-06-01,Information,78.7,0.63
+2026-06-01,Manufacturing,58.36,1.15
+2026-06-01,Retail Trade,48.35,1.82
+2026-07-01,Accommodation & Food,31.5,1.31
+2026-07-01,Construction,40.91,0.98
+2026-07-01,Finance & Insurance,72.34,-0.19
+2026-07-01,Healthcare,41.86,1.16
+2026-07-01,Information,79.66,0.97
+2026-07-01,Manufacturing,59.61,1.26
+2026-07-01,Retail Trade,48.07,-0.28
+2026-08-01,Accommodation & Food,32.58,1.08
+2026-08-01,Construction,41.24,0.33
+2026-08-01,Finance & Insurance,73.12,0.78
+2026-08-01,Healthcare,42.34,0.48
+2026-08-01,Information,80.05,0.39
+2026-08-01,Manufacturing,60.3,0.69
+2026-08-01,Retail Trade,48.27,0.2
+2026-09-01,Accommodation & Food,32.98,0.4
+2026-09-01,Construction,43.16,1.92
+2026-09-01,Finance & Insurance,73.69,0.57
+2026-09-01,Healthcare,42.54,0.2
+2026-09-01,Information,79.92,-0.13
+2026-09-01,Manufacturing,60.87,0.57
+2026-09-01,Retail Trade,49.86,1.59
