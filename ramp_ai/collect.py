@@ -39,7 +39,10 @@ SERIES = {
     "adoptionSize": ("adoption_size.csv", ["date_month", "business_size", "adoption_rate_pct", "mom_change_pp"]),
     "spendPerEmployee": ("spend_per_employee.csv", ["date_month", "median_pepm", "top_10_percent_median_pepm", "top_1_percent_median_pepm", "business_count"]),
 }
-REQUIRED = ("adoptionOverall", "adoptionVendor", "adoptionUsEstimate")
+# The run fails only if these are gone; any other series that disappears is
+# skipped with a warning and its CSV is left as it was. (Ramp dropped the
+# Census comparison, adoptionUsEstimate, from the page in Nov 2026.)
+REQUIRED = ("adoptionOverall", "adoptionVendor")
 
 
 def fetch_html() -> str:
@@ -131,13 +134,20 @@ def main() -> int:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     now = dt.datetime.now(dt.timezone.utc)
     page_html = fetch_html()
-    series = extract_series(payload(page_html))
+    blob = payload(page_html)
+    series = extract_series(blob)
     tokens = extract_tokenomics(page_html)
 
     missing = [k for k in REQUIRED if k not in series]
     if missing:
         print(f"ERROR: page structure changed; missing {missing}", file=sys.stderr)
         return 1
+    skipped = [k for k in SERIES if k not in series]
+    if skipped:
+        # List the page's adoption-like keys so a renamed series is easy to spot.
+        found = sorted(set(re.findall(r'"(adoption[A-Za-z]*)":\[', blob)))
+        print(f"WARN: series no longer on the page, CSV left as is: {skipped}; adoption keys present: {found}",
+              file=sys.stderr)
 
     captured_at = now.isoformat(timespec="seconds")
     (RAW_DIR / f"{now:%Y-%m-%dT%H%M}Z.json").write_text(

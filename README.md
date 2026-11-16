@@ -30,7 +30,7 @@ The page is server-rendered with its full monthly history embedded, so each run 
 |---|---|---|
 | `adoption_overall.csv` | month | Share of businesses paying for any AI, since Jul 2023 |
 | `adoption_vendor.csv` | month × vendor | Share of businesses paying Anthropic, OpenAI, xAI, DeepSeek, Mistral |
-| `adoption_census.csv` | month | Census Business Trends and Outlook Survey estimate, for comparison |
+| `adoption_census.csv` | month | Census Business Trends and Outlook Survey estimate, for comparison. Ramp removed it from the page in Nov 2026, so this file stops at Sep 2026 |
 | `adoption_sector.csv`, `adoption_size.csv` | month × group | Adoption by NAICS sector and by business size |
 | `spend_per_employee.csv` | month | AI spend per employee per month among firms paying for AI (median, top 10%, top 1%) |
 | `ai_share_of_spend.csv` | month | AI's share of non-payroll business spend |
