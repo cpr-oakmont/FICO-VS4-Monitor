@@ -719,3 +719,15 @@ captured_at,gpu,region,price_usd,effective_time,platform,sku_id
 2026-11-18T08:27:52.010438Z,RTX PRO 6000,eu-south1,1.38,2026-11-18T03:11:00Z,gpu-rtx6000-a,sku-e00g61h0323jih8tkg5jv
 2026-11-18T08:27:52.010438Z,RTX PRO 6000,uk-south2,1.38,2026-11-17T09:06:00Z,gpu-rtx6000-a,sku-e00lxawt0lavf9i0dutiz
 2026-11-18T08:27:52.010438Z,RTX PRO 6000,us-central1,1.79,2026-11-18T07:36:00Z,gpu-rtx6000,sku-e00otwkvc6gea6nmvvsda
+2026-11-18T21:21:01.968198Z,B200,me-west1,2.8,2026-11-18T20:41:00Z,gpu-b200-sxm-a,sku-e00k58wq19wjszct65fwm
+2026-11-18T21:21:01.968198Z,B200,us-central1,3.3,2026-11-18T20:51:00Z,gpu-b200-sxm,sku-e00fjjc4gwdx48pck9b46
+2026-11-18T21:21:01.968198Z,B300,eu-west2,7.8,2026-11-18T21:06:00Z,gpu-b300-sxm,sku-e00vd4x28cozliwb6g4vh
+2026-11-18T21:21:01.968198Z,B300,uk-south1,12.5,2026-11-18T17:01:00Z,gpu-b300-sxm,sku-e00fmto201j24eyp0841g
+2026-11-18T21:21:01.968198Z,B300,us-north1,9.49,2026-11-18T21:06:00Z,gpu-b300-sxm,sku-e00hfg6dlxtt9ji6fqo9u
+2026-11-18T21:21:01.968198Z,H100,eu-north1,1.85,2026-11-18T20:46:00Z,gpu-h100-sxm,sku-e00ljkedv5qtbwhikuoct
+2026-11-18T21:21:01.968198Z,H200,eu-north1,2.6,2026-11-18T20:41:00Z,gpu-h200-sxm,sku-e00agrh84hf7fwlrgsfsv
+2026-11-18T21:21:01.968198Z,H200,eu-west1,2,2026-11-18T20:46:00Z,gpu-h200-sxm,sku-e00dh1moiqg9mc5ix6wj2
+2026-11-18T21:21:01.968198Z,H200,us-central1,2.66,2026-11-18T21:11:00Z,gpu-h200-sxm,sku-e00em8l461xmyihec7sr8
+2026-11-18T21:21:01.968198Z,RTX PRO 6000,eu-south1,1.38,2026-11-18T03:11:00Z,gpu-rtx6000-a,sku-e00g61h0323jih8tkg5jv
+2026-11-18T21:21:01.968198Z,RTX PRO 6000,uk-south2,1.79,2026-11-18T20:56:00Z,gpu-rtx6000-a,sku-e00lxawt0lavf9i0dutiz
+2026-11-18T21:21:01.968198Z,RTX PRO 6000,us-central1,1.79,2026-11-18T17:26:00Z,gpu-rtx6000,sku-e00otwkvc6gea6nmvvsda
